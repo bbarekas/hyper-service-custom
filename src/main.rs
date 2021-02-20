@@ -58,6 +58,16 @@ async fn main() {
         }
     });
 
+    /*
+    let server = Server::bind(&addr)
+        .serve(make_service_fn(|conn: &AddrStream| {
+            let remote_addr = conn.remote_addr();
+            service_fn_ok(move |_: Request<Body>| {
+                Response::new(Body::from(format!("Hello, {}", remote_addr)))
+            })
+        }))
+    */
+
     let server = Server::bind(&addr).serve(new_service);
     println!("Listening on http://{}", addr);
 

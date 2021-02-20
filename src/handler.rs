@@ -26,6 +26,8 @@ pub async fn send_handler(mut ctx: Context) -> Response {
         }
     };
 
+    println!("Req: {:?}", ctx.req);
+
     Response::new(
         format!(
             "send called with name: {} and active: {}",

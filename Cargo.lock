@@ -210,6 +210,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "hyper-service-custom"
+version = "0.2.0"
+dependencies = [
+ "async-trait",
+ "bytes",
+ "futures",
+ "hyper",
+ "route-recognizer",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "indexmap"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -291,20 +305,6 @@ checksum = "5a33c1b55807fbed163481b5ba66db4b2fa6cde694a5027be10fb724206c5897"
 dependencies = [
  "socket2",
  "winapi",
-]
-
-[[package]]
-name = "my-hyper"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "bytes",
- "futures",
- "hyper",
- "route-recognizer",
- "serde",
- "serde_json",
- "tokio",
 ]
 
 [[package]]
