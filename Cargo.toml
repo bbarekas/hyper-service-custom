@@ -1,6 +1,6 @@
 [package]
-name = "my-hyper"
-version = "0.1.0"
+name = "hyper-service-custom"
+version = "0.2.0"
 authors = ["Bill Barekas <bbarekas@gmail.com>"]
 edition = "2018"
 
