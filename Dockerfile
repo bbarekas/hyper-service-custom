@@ -1,4 +1,4 @@
-FROM rust:1.50 as builder
+FROM rust:1.56 as builder
 
 RUN USER=root cargo new --bin hyper-service-custom
 WORKDIR ./hyper-service-custom

@@ -9,8 +9,15 @@ Supports the following calls.
 * `POST /send`: Sample JSON parser
 * `GET /params/:param`: Samplme parameter parser
 
-Next steps:
+## Run with docker
+
+```shell
+docker run -p 3001:3001 bbarekas/hyper-service
+```
+
+## Next steps:
 * Add more routing cases
 * Add logging
 * Run benchmark
 * Random staff
+
